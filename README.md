@@ -6,6 +6,7 @@ R scripts
 以下列出一些註議
 
 ############ 需先安裝的套件 ################
+
 library(ggplot2)
 library(chron)
 library(ggrepel)
@@ -20,6 +21,7 @@ y <- argv[2]    # path
 
 
 ############ 點標上domain name　###########
+
  將down time為5:00之後的，因為vector的＂長度＂限制不能和原本time sclase 不同，因此用　na來表示不被接上標籤的部分即可
 v5[times(all$down_time) < times("05:00:00")] <-NA
 
