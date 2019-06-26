@@ -11,6 +11,7 @@ library(chron)
 library(ggrepel)
 
 ######### 使用 Rscript 接收參數  ############
+
 arg <- commandArgs(trailingOnly = TRUE)
 
 x <- as.vector(strsplit(arg[1], ",")[[1]])  # date
