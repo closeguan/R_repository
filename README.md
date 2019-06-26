@@ -1,6 +1,7 @@
 # R_repository
 R scripts
 
+
 用來製作每周WAF Daily report 的圖表。
 以下列出一些註議
 
@@ -11,7 +12,9 @@ library(ggrepel)
 
 ## 使用 Rscript 接收參數
 arg <- commandArgs(trailingOnly = TRUE)
+
 x <- as.vector(strsplit(arg[1], ",")[[1]])  # date
+
 y <- argv[2]    # path
 
 
